@@ -1,0 +1,3 @@
+target 'CSCI571Spr2017ios' do
+	pod 'SWREVEALVIEWCONTROLLER', '~> 2.3.0'
+end

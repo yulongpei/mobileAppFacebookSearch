@@ -1,0 +1,73 @@
+CSCI571Spr2017ios.xcodeproj and CSCI571Spr2017ios.xcworkspace
+-two files that leads to the workspace inside xcode that organizes all files of your project together
+
+Podfile
+-CocoaPod file that used to tell CocoaPod what pods to install for your project
+
+wHW92ag5.php inside ServerSidePHP folder
+-the server-side php that deals with obtaining request from the app and requesting info from Facebook graph api according to the request and returning the corresponding JSON results from Facebook to the app
+
+
+Files inside CSCI571Spr2017ios:
+------------------------------
+Base.lproj folder include: LaunchScreen.storyboard and Main.stroyboard
+-LaunchScreen has what the launchScreen lookslike
+-Main has all the rest of the logic flow in pictorial format with views and segues
+
+CSCI571Spr2017ios-Bridging-Header.h
+-connects objective-c libraries to swift 3; inside connects SWRevealViewController
+
+AboutVC.swift
+-This is the logic for About page
+
+AlbumVC.swift PostVC.swift
+-logic for Album view and Post view
+-request the album/post from id that is passed in and creating table for the albums/posts 
+
+AppDelegate.swift
+-delegate what the app will do in cases like when it goes into the background, come back from background, etc.
+
+detailBarVC.swift
+-logic for the tab bar controller for album and post, this controls the option button for adding/removing from favorite and sharing(which I could not finish)
+
+UserVC.swift EventVC.swift PageVC.swift PlaceVC.swift GroupVC.swift
+-logic for the 5 tabs of the search
+-each request the server for data and display it in a table
+-each have code for dealing with what to do when cells inside the table is pressed, i.e. sening id, name, type to the details pages
+
+searchCell.swift
+-file for the cell that is inside the table of 5 search result tabs
+
+FavUser.swift FavPage.swift favEvent.swift FavPlace.swift FavGroup.swift
+-logic for he 5 tabs of Favorite
+-each checks the UserDefaults for profiles that have being favorited and display data in individual tables
+-each lead to details pages when cell is pressed
+
+FavCell.swift
+-file for the cell that is inside the table of 5 favorite tabs
+
+PostCell.swift
+-file for the cell that is inside the table of Post view
+
+ExpandCell.swift
+-file for the cell that is inside the AlbumView
+
+searchTabBarC.swift
+-file for the controller of 5 tabs of search resutl
+
+searchTabSWRVC.swift
+-file of type SWRevealViewController used to pass the query string from mainVC to the search tables
+
+MainVC.swift
+-logic for the main page where users typeing the query string and search or clear the string
+
+info.plist
+-property list of the project
+
+MenuVC
+-file for menu that slides out from the left
+
+UIimageDowload.swift
+-extension that is found online
+
+
